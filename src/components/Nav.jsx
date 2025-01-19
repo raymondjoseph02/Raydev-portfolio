@@ -12,11 +12,19 @@ function Nav() {
     <>
       <header className=" bg-white header">
         <nav className="flex justify-between items-center py-4 px-40 backdrop:blur-md">
-          <div className="bg-gray-300  rounded-full">
-            <a href="/">
-              <img src={emoji_avater} alt="" className="size-16" />
-            </a>
-          </div>
+          <a
+            href="/"
+            className="bg-gray-300 size-16 items-center justify-center rounded-full group relative overflow-hidden flex  "
+          >
+            <img
+              src={emoji_avater}
+              alt=""
+              className="size-16 group-hover:translate-x-[-300px] transition-all ease-in-out duration-200 "
+            />
+            <div className=" group-hover:absolute absolute transition-all duration-200 translate-x-12 group-hover:translate-x-0">
+              <p className="text-2xl font-arimo">RJ</p>
+            </div>
+          </a>
           <div className="flex  items-center gap-12">
             <ul className="flex  gap-12">
               <li className="text-lg font-sirin cursor-pointer font-medium relative pb-1 group ">
