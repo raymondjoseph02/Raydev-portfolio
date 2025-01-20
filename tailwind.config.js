@@ -1,5 +1,3 @@
-import { transform } from "framer-motion";
-
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],

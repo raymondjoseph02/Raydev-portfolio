@@ -1,4 +1,3 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
