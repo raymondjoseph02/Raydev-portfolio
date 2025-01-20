@@ -1,3 +1,5 @@
+import { transform } from "framer-motion";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -13,6 +15,25 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      animation: {
+        from: "bounce_bg 2s ease-in-out infinite",
+      },
+      keyframes: {
+        bounce_bg: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+          "80%": {
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       colors: {
         background: "hsl(var(--background))",

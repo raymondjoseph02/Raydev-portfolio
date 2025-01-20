@@ -3,7 +3,7 @@ import smart_filing from "../../assets/images/Screen Shot 2025-01-07 at 10.26.36
 import { motion } from "framer-motion";
 function ProjectCard() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between bg-white p-4">
       <div className="basis-1/2">
         <img src={smart_filing} alt="" className="aspect-video object-cover" />
       </div>

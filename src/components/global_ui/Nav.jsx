@@ -1,7 +1,7 @@
 import Headroom from "headroom.js";
 import { useEffect } from "react";
 import PrimaryBtn from "./PrimaryBtn";
-import emoji_avater from "../assets/images/avater-1.png";
+import emoji_avater from "../../assets/images/avater.jpeg";
 function Nav() {
   useEffect(() => {
     const header = document.querySelector("header");
@@ -12,19 +12,28 @@ function Nav() {
     <>
       <header className=" bg-white header">
         <nav className="flex justify-between items-center py-4 px-40 backdrop:blur-md">
-          <a
-            href="/"
-            className="bg-gray-300 size-16 items-center justify-center rounded-full group relative overflow-hidden flex  "
-          >
-            <img
-              src={emoji_avater}
-              alt=""
-              className="size-16 group-hover:translate-x-[-300px] transition-all ease-in-out duration-200 "
-            />
-            <div className=" group-hover:absolute absolute transition-all duration-200 translate-x-12 group-hover:translate-x-0">
-              <p className="text-2xl font-arimo">RJ</p>
+          <div>
+            <div className="bg-red-300 p-2 rounded-full">
+              <div className="bg-blue-100 p-1 rounded-full">
+                <div>
+                  <a
+                    href="/"
+                    className="bg-gray-300 size-12 items-center justify-center rounded-full group relative overflow-hidden flex  "
+                  >
+                    <img
+                      src={emoji_avater}
+                      alt=""
+                      className="size-12 group-hover:translate-x-[-300px] transition-all ease-in-out duration-200 "
+                    />
+                    <div className=" group-hover:absolute absolute transition-all duration-200 translate-x-12 group-hover:translate-x-0">
+                      <p className="text-2xl font-arimo">RJ</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
+
           <div className="flex  items-center gap-12">
             <ul className="flex  gap-12">
               <li className="text-lg font-sirin cursor-pointer font-medium relative pb-1 group ">
